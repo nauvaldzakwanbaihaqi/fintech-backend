@@ -38,6 +38,7 @@ This is a fintech backend service that handles financial transactions with a foc
 ## Installation
 
 ### Prerequisites
+
 - Node.js (v18 or higher)
 - pnpm (v8 or higher)
 - PostgreSQL database
@@ -45,18 +46,21 @@ This is a fintech backend service that handles financial transactions with a foc
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/nauvaldzakwanbaihaqi/fintech-backend.git
 cd fintech-backend
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Configure environment variables:
-Create a `.env` file in the root directory with the following variables:
+   Create a `.env` file in the root directory with the following variables:
+
 ```env
 DATABASE_URL=postgresql://user:password@localhost:5432/fintech_db
 PORT=3000
@@ -64,6 +68,7 @@ NODE_ENV=development
 ```
 
 4. Setup database:
+
 ```bash
 pnpm run db:migrate
 ```
@@ -79,6 +84,7 @@ pnpm run db:migrate
 ## API Endpoints
 
 ### Transfer Endpoints
+
 - `POST /api/transfers` - Create a new transfer
 - `GET /api/transfers/:id` - Get transfer details
 - `GET /api/transfers` - List all transfers
@@ -97,6 +103,7 @@ pnpm run db:migrate
 ## Development
 
 ### Run in Development Mode
+
 ```bash
 pnpm dev
 ```
@@ -104,6 +111,7 @@ pnpm dev
 The server will start on `http://localhost:3000` (or the port specified in `.env`)
 
 ### Database Management
+
 ```bash
 pnpm run db:studio
 ```
